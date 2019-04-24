@@ -100,6 +100,7 @@
 			%>
          }
          function addFav(){
+        	 console.log("-----------");
         	 var siteUrl=window.location.href;
         	 var siteName="EKP";
         	 if(document.all){                     
