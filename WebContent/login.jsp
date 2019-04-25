@@ -35,8 +35,11 @@
         <div class="login_content main_content">
             <!-- 登录框 开始 -->
             <div class="login_iframe">
+            	<!--  登录系统：底下两行代码引入js代码和form表单  -->
                 <div class="header"><%=ResourceUtil.getStringValue("login.title", null, ResourceUtil.getLocale(request.getParameter("lang")))%></div>
                 <ui:combin ref="login.form"></ui:combin>
+                
+                
                 <!-- 下拉弹出窗 Starts -->
                 <div class="login-dropbox">
                     <div class="login-dropbox-toggle">
@@ -100,7 +103,6 @@
 			%>
          }
          function addFav(){
-        	 console.log("-----------");
         	 var siteUrl=window.location.href;
         	 var siteName="EKP";
         	 if(document.all){                     
